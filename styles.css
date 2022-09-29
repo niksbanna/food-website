@@ -22,6 +22,8 @@ p {
   align-items: center;
   background: url(images/bg.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .banner .content {
   max-width: 900px;
@@ -35,6 +37,22 @@ p {
   font-size: 1em;
   color: #fff;
 }
+.btn-box {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 50%;
+  border: none;
+  background-color: #ff0157;
+  color: #fff;
+}
+.btn-box:hover {
+  color: #ff0157;
+  background-color: #fff;
+}
+
 .btn {
   font-size: 1em;
   color: #fff;
@@ -121,58 +139,56 @@ section {
   font-weight: 300;
 }
 .titleText span {
-    color: #ff0157;
-    font-weight: 700;
-    font-size: 1.5em;
+  color: #ff0157;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 .row .col50 .imgBx {
-    position: relative;
-    width: 100%;
-    /*min-height: 300px;*/
-    height: 100%;
+  position: relative;
+  width: 100%;
+  /*min-height: 300px;*/
+  height: 100%;
 }
 .row .col50 .imgBx img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .title {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .menu .content {
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 .menu .content .box {
-    width: 340px;
-    margin: 20px;
-    border: 15px solid #fff;
-    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
-
+  width: 340px;
+  margin: 20px;
+  border: 15px solid #fff;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
 }
 .menu .content .box .imgBx {
-    position: relative;
-    width: 100%;
-    height: 300px;
- 
+  position: relative;
+  width: 100%;
+  height: 300px;
 }
 .menu .content .box .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .expert .content {
   justify-content: center;
@@ -207,8 +223,9 @@ section {
 }
 
 .testimonials {
-  background: url(images/bg1.jpeg);
+  background: url(images/bg1.jpg);
   background-size: cover;
+  margin-bottom: 10px;
 }
 .white .titleText,
 .white p {
@@ -238,7 +255,6 @@ section {
   margin-bottom: 20px;
   border-radius: 50%;
   overflow: hidden;
-
 }
 .testimonials .content .box .imgBx img {
   position: absolute;
@@ -260,10 +276,9 @@ section {
   font-size: 1em;
   margin-top: 20px;
   font-weight: 600;
-
 }
 .contact {
-  background: url(images/bg3.jpeg);
+  background: url(images/bg3.jpg);
   background-size: cover;
 }
 .contactForm {
@@ -278,40 +293,39 @@ section {
   font-size: 1.2em;
   font-weight: 500;
   margin-bottom: 20px;
-
 }
 .contactForm .inputBox {
   position: relative;
   width: 100%;
   margin-bottom: 20px;
-
 }
 .contactForm .inputBox input,
-.contactForm .inputBox textarea
- {
+.contactForm .inputBox textarea {
   width: 100%;
   border: 1px solid #555;
   padding: 10px;
   color: #111;
   outline: none;
   font-size: 16px;
-  font-weight: 300 ;
+  font-weight: 300;
   resize: none;
 }
-.contactForm .inputBox input[type="submit"]
-{
+.contactForm .inputBox input[type="submit"] {
   font-size: 1em;
   color: #fff;
   background: #ff0157;
   display: inline-block;
-  text-transform: uppercase;  
+  text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2px;
-  transition: 0.5s;
+  transition: 0.3s;
   max-width: 100px;
   font-weight: 500;
   border: none;
   cursor: pointer;
+}
+.contactForm .inputBox input[type="submit"]:hover {
+  letter-spacing: 6px;
 }
 .copyrightText {
   padding: 8px 40px;
@@ -326,11 +340,17 @@ section {
   font-weight: 500;
   text-decoration: none;
 }
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
 
-@media (max-width: 991px)
-{
-  header, header.sticky {
-  padding: 10px 20px;
+@media (max-width: 991px) {
+  header,
+  header.sticky {
+    padding: 10px 20px;
   }
   header .navigation {
     display: none;
@@ -370,7 +390,7 @@ section {
     background-repeat: no-repeat;
     background-position: center;
   }
-  header.sticky .menuToggle{
+  header.sticky .menuToggle {
     filter: invert(1);
   }
   section {
@@ -394,8 +414,7 @@ section {
   .menu .content {
     margin-top: 20px;
   }
-  .menu .content .box 
-  {
+  .menu .content .box {
     margin: 10px;
   }
   .menu .content .box .imgBx {
@@ -420,11 +439,23 @@ section {
     margin-bottom: 30px;
   }
 }
-@media (max-width: 400px)
-{
+@media (max-width: 425px) {
   .banner .content h2 {
     font-size: 2.2em;
     color: #fff;
   }
+  .extraImg {
+    display: none;
+  }
 }
-
+@media (max-width: 768px) {
+  .extra {
+    display: none;
+  }
+  .titleText {
+    text-align: center;
+  }
+  .contactForm {
+    margin: 0 auto;
+  }
+}
