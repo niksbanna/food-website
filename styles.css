@@ -12,6 +12,10 @@ body {
 p {
   font-weight: 300;
   color: #111;
+  text-shadow: 1px 1px 1px #fff;
+}
+button:hover {
+  cursor: pointer;
 }
 .banner {
   position: relative;
@@ -383,6 +387,7 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    transition: 0.3s;
   }
   .menuToggle.active {
     background: url(images/close.png);
@@ -457,5 +462,8 @@ section {
   }
   .contactForm {
     margin: 0 auto;
+  }
+  .box-mobile {
+    display: none;
   }
 }
